@@ -3,6 +3,11 @@ os: linux
 files:
   - source: /
     destination: /var/www/freightrunner-api
+    permissions:
+- object: /
+   pattern: "**"
+   owner: ubuntu
+   group: ubuntu
 file_exists_behavior: OVERWRITE
 hooks:
   BeforeInstall:

@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /var/www/freightrunner-api
-pm2 start index.js 
+sudo pm2 start index.js 

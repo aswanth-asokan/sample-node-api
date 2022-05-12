@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /var/www/freightrunner-api
-npm install
+sudo npm install
