@@ -4,10 +4,11 @@ files:
   - source: /
     destination: /tmp/freightrunner-api/
 permissions:
-  - object: /
-    pattern: "**"
+  - object: /*
+    mode: 777
     owner: ubuntu
-    group: ubuntu    
+    type:
+      - file     
 file_exists_behavior: OVERWRITE
 hooks:
   BeforeInstall:
