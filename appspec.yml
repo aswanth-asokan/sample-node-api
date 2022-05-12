@@ -2,7 +2,7 @@ version: 0.0
 os: linux 
 files:
   - source: /
-    destination: /var/www/freightrunner-api/
+    destination: /tmp/freightrunner-api/
 file_exists_behavior: OVERWRITE
 hooks:
   BeforeInstall:
