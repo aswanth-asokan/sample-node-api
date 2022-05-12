@@ -6,11 +6,13 @@ files:
 file_exists_behavior: OVERWRITE
 hooks:
   BeforeInstall:
-    - location: scripts/before_install.sh
+    - cd /var/www/freightrunner-api/
+    - pm2 delete all
+    - pm2 flush
       timeout: 300
       runas: ubuntu
   Install:
-    - location: scripts/install.sh
+    - npm install
       timeout: 300
       runas: ubuntu
   ApplicationStart:
