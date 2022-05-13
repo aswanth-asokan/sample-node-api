@@ -12,8 +12,8 @@ phases:
       - npm install
   post_build:
     commands:
-      - cp appspec.yml ./build/appspec.yml
-      - cp -r scripts ./build/
+      - cp appspec.yml ./appspec.yml
+      - cp -r scripts ./
       - echo Build completed on `date`
 artifacts:
   files:
