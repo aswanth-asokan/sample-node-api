@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /tmp/freightrunner-api/
+cd /var/www/freightrunner-web/
 sudo pm2 start ecosystem.config.json
