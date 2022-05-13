@@ -2,13 +2,7 @@ version: 0.0
 os: linux 
 files:
   - source: /
-    destination: /tmp/freightrunner-api/
-permissions:
-  - object: /*
-    mode: 777
-    owner: ubuntu
-    type:
-      - file     
+    destination: /var/www/freightrunner-web
 file_exists_behavior: OVERWRITE
 hooks:
   BeforeInstall:
@@ -16,9 +10,7 @@ hooks:
       timeout: 300
       runas: ubuntu
   Install:
-    - location: scripts/install.sh
-      timeout: 300
-      runas: ubuntu
+    - echo Compiling the Node.js code
   ApplicationStart:
     - location: scripts/application_start.sh
       timeout: 300
