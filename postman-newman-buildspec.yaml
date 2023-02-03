@@ -10,7 +10,7 @@ phases:
       nodejs: 12
     commands: #https://learning.getpostman.com/docs/postman/collection-runs/command-line-integration-with-newman/
       - npm install -g newman
-      - yum install -y jq
+      - apt install -y jq
 
   pre_build:
     commands:
