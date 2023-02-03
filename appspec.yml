@@ -2,7 +2,7 @@ version: 0.0
 os: linux 
 files:
   - source: /
-    destination: /var/www/mop-api
+    destination: /var/www/freightrunner-web/
 file_exists_behavior: OVERWRITE
 hooks:
   BeforeInstall:
