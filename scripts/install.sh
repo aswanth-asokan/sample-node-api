@@ -1,2 +1,3 @@
 #!/bin/bash
-./install.sh
+cd /home/ubuntu/
+./auto.sh
